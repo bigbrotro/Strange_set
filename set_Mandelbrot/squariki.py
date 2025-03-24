@@ -15,6 +15,6 @@ def square_complex(x, y):
     if x == 0 and y == 0:
         return 0 + 0j
     absz = ((x ** 2) + (y ** 2)) ** 0.5
-    z = (absz ** 4) * (cos(2 * acos(x / absz)) - sin(2 * acos(x / absz)) * 1j)
+    z = (absz ** 4) * (cos(2 * acos(x / absz)) + sin(2 * acos(x / absz)) * 1j)
     return z
 
